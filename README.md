@@ -9,7 +9,9 @@ This is a simple web app designed to facilitate image labeling. The labeled imag
 
 
 ### Start Server
-To start the server, navigate to the project directory and run the following command:
+**NOTE: update app_config.py to reflect where the url pointing to the mongodb instance running so that the tests can work.**
+
+To start the server, navigate to the project directory and run the following command, application has been developed in Python 3.11:
 ```
 python main.py
 ```
@@ -19,7 +21,7 @@ To run API tests, navigate to the project directory and execute the following co
 ```
 python -m pytest
 ```
-NOTE: update app_config.py to reflect where the url pointing to the mongodb instance running so that the tests can work.
+**NOTE: update app_config.py to reflect where the url pointing to the mongodb instance running so that the tests can work.**
 
 #  Run App and database locally via Docker
 
