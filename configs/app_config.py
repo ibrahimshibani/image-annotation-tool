@@ -1,4 +1,4 @@
-mongodb_url = "mongodb://localhost:27017/"
+mongodb_url = "mongodb://mongo-db-instance:27017/"
 
 db_name = "supply_chain_data_factory_1"
 collection_name = "deeplearning_training_images"

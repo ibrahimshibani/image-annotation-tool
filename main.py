@@ -6,4 +6,3 @@ if __name__ == "__main__":
         config = json.load(f)
 
     uvicorn.run("server:app", host=config['host'], port=config['port'], reload=False)
-
