@@ -21,7 +21,7 @@ python -m pytest
 ```
 NOTE: update app_config.py to reflect where the url pointing to the mongodb instance running so that the tests can work.
 
-#  Run App and database locally
+#  Run App and database locally via Docker
 
 
 ## Building Docker Images
@@ -40,7 +40,7 @@ While in root GH dir :
    docker build -t fast-mongo-db -f ./docker/mongoDB.dockerfile .
    ```
 
-## Running Entire Stack with Docker
+## Run Containers
 
 After the images have been built, you can run the containers. But before that, you need to create a network that allows the containers to communicate with each other.
 
