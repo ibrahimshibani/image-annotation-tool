@@ -14,9 +14,9 @@ class ImageData(BaseModel):
     label: Optional[List[str]] = Field(None)
 
     @validator("label")
-    def check_label(cls, v, values, **kwargs):
+    def check_label(v):
         if v is not None:
             for exclusive_pair in mutually_exclusive_labels:
                 if set(exclusive_pair).issubset(set(v)):
-                    raise ValueError(f'Image cannot have these labels combination {exclusive_pair} ')
+                    raise ValueError(f'Image cannot have these labels combination {exclusive_pair}.')
         return v
